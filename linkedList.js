@@ -107,7 +107,7 @@ function LinkedList() {
     this.removeAt = function(index) {
         var currentNode= head;
         var previousNode;
-        var currentIndex = o;
+        var currentIndex = 0;
 
         if (index < 0 || index >= length) {
             return null
@@ -134,4 +134,7 @@ zooAnimals.add('Lion');
 zooAnimals.add('Elephant');
 zooAnimals.add('Fish');
 console.log(zooAnimals.size());
-console.log(zooAnimals.elementAt(2));
+zooAnimals.removeAt(1);
+console.log(zooAnimals.elementAt(1))
+console.log(zooAnimals.size());
+console.log(zooAnimals.elementAt(0));
