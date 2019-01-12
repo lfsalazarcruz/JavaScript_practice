@@ -59,4 +59,19 @@ ringBuffer.append("e");
 console.log(ringBuffer.capacity);
 console.log(ringBuffer.current);
 console.log(ringBuffer.storage);
+ringBuffer.append("f");
+console.log(ringBuffer.capacity);
+console.log(ringBuffer.current);
+console.log(ringBuffer.storage);
 console.log(ringBuffer.allValues());
+
+// class BufferRing:
+//     def __init__(self, capacity):
+//         self.capacity = capacity
+//         self.current = 0
+//         self.storage = []
+
+//     def append(item):
+//         self.storage[self.current+1] = item
+//         if self.current is self.capacity:
+//             self.current = 0
