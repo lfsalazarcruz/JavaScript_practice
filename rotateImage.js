@@ -1,6 +1,6 @@
 // Given an image represented by an NxN matrix, where each pixel in the image
-// is an integer from 0 to 9, write a function rotateImage that rotates the image
-// by 90 degrees in the counter-clockwise direction.
+// is an integer from 0 to 9, write a function rotateImage that rotates
+// the image by 90 degrees in the counter-clockwise direction.
 
 /* 
   Iterative in-place solution using two loops
