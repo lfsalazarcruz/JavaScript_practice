@@ -13,7 +13,6 @@ var queue = [];
 queue.push("A");
 console.log(queue);
 queue.push("B");
-console.log(queue);
 queue.push("C");
 console.log(queue);
 
@@ -23,3 +22,30 @@ queue.shift();
 console.log(queue);
 queue.shift();
 console.log(queue);
+
+// Queue implementation using a class
+class Queue {
+  constructor() {
+    this.storage = [];
+  }
+
+  enqueue(item) {
+    this.storage.push(item);
+  }
+
+  dequeue() {
+    this.storage.shift();
+  }
+
+  returnQueue() {
+    return this.storage;
+  }
+}
+
+var myQueue = new Queue();
+console.log(myQueue.storage);
+myQueue.enqueue("A");
+myQueue.enqueue("B");
+console.log(myQueue.storage);
+myQueue.dequeue();
+console.log(myQueue.storage);
