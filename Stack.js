@@ -6,4 +6,17 @@
 
 // Last in first out LIFO
 
+//  Stack storage
 var stack = [];
+
+// Using unshift method to insert a value on top of the stack
+stack.unshift("A");
+console.log(stack);
+stack.unshift("B");
+stack.unshift("C");
+console.log(stack);
+
+// Using shift method to delete the element on top of the stack
+stack.shift();
+stack.shift();
+console.log(stack);
