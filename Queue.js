@@ -79,3 +79,5 @@ myQueue.dequeue();
 console.log(myQueue.storage);
 myQueue.enqueue("B");
 console.log(myQueue.storage);
+myQueue.enqueue("B");
+myQueue.enqueue("B");
