@@ -20,3 +20,28 @@ console.log(stack);
 stack.shift();
 stack.shift();
 console.log(stack);
+
+// Implementation of a stack creating a stack object
+class Stack {
+  constructor() {
+    this.storage = [];
+  }
+  push(item) {
+    this.storage.unshift(item);
+  }
+  pop() {
+    this.storage.shift();
+  }
+  stackValues() {
+    return this.storage;
+  }
+}
+
+var myStack = new Stack();
+console.log(myStack);
+myStack.push("A");
+myStack.push("B");
+myStack.push("C");
+console.log(myStack.storage);
+myStack.pop();
+myStack.stackValues();
