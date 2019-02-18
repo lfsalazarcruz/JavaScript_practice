@@ -46,6 +46,23 @@ class Stack {
       return false;
     }
   }
+  peek() {
+    if (this.storage.length > 0) {
+      return this.storage[0];
+    } else {
+      console.log("Stack is empty");
+      return false;
+    }
+  }
+  isEmpty() {
+    if (this.storage.length === 0) {
+      console.log("Stack is empty");
+      return false;
+    } else {
+      console.log("Stack not empty: ", this.storage);
+      return this.storage;
+    }
+  }
   stackValues() {
     return this.storage;
   }
