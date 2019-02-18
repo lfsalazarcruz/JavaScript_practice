@@ -23,14 +23,28 @@ console.log(stack);
 
 // Implementation of a stack creating a stack object
 class Stack {
-  constructor() {
+  constructor(size) {
     this.storage = [];
+    this.size = size;
+    this.current = 0;
   }
   push(item) {
-    this.storage.unshift(item);
+    if (this.size === this.current) {
+      console.log("Stack storage is full!");
+      return false;
+    } else {
+      this.storage.unshift(item);
+      this.current++;
+    }
   }
   pop() {
-    this.storage.shift();
+    if (this.current > 0) {
+      this.storage.shift();
+      this.current--;
+    } else if (this.current === 0 && this.storage.length === 0) {
+      console.log("The stack is empty!");
+      return false;
+    }
   }
   stackValues() {
     return this.storage;
