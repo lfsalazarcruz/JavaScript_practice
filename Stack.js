@@ -28,6 +28,7 @@ class Stack {
     this.size = size;
     this.current = 0;
   }
+
   push(item) {
     if (this.size === this.current) {
       console.log("Stack storage is full!");
@@ -37,6 +38,7 @@ class Stack {
       this.current++;
     }
   }
+
   pop() {
     if (this.current > 0) {
       this.storage.shift();
@@ -46,6 +48,7 @@ class Stack {
       return false;
     }
   }
+
   peek() {
     if (this.storage.length > 0) {
       return this.storage[0];
@@ -54,6 +57,7 @@ class Stack {
       return false;
     }
   }
+
   isEmpty() {
     if (this.storage.length === 0) {
       console.log("Stack is empty");
@@ -63,6 +67,7 @@ class Stack {
       return this.storage;
     }
   }
+
   stackValues() {
     return this.storage;
   }
